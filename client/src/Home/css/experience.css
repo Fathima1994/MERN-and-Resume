@@ -1,0 +1,28 @@
+/* Create two equal columns that floats next to each other */
+.headingcolumn {
+    float: left;
+    width:30%;
+    padding: 10px;
+  }
+  .descriptioncolumn{
+    float: right;
+    width:70%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .headingcolumn {
+      float: none;
+      width: 100%;
+    }
+    .descriptioncolumn  {
+      float: none;
+      width: 100%;
+    }
+  }

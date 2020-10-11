@@ -1,0 +1,23 @@
+/* Create two equal columns that floats next to each other */
+.skillscolumn {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    height: 150px
+  }
+  
+  /* Clear floats after the columns */
+  .skillsrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .skillsContainer{
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .skillscolumn  {
+      float: none;
+      width: 100%;
+    }
+  }
