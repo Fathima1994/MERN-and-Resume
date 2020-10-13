@@ -47,3 +47,28 @@ exports.addContact = async (req, res, next) => {
         }
     }
 }
+
+// @desc Delete contact
+// @route DELETE /api/v1/contacts/:id
+// @access Public
+exports.deleteContact = async (req, res, next) => {
+    try {
+        const contact = await Contact.findById(req.params.id);
+        if(!contact) {
+            return res.status(404).json({
+                success: false,
+                data: "No Contact found"
+            })
+        }
+        await contact.remove();
+        return res.status(200).json({
+            status: true,
+            data: {}
+        })
+    } catch (err) {
+        return res.status(500).json({
+            success: false,
+            error: 'Server Error'
+        })
+    }
+}
