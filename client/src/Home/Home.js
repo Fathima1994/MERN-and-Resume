@@ -60,8 +60,8 @@ export const  Home = (props) => {
                             You can have a look at the apps
                         </h3>
                         </p>
-                        <a target="_blank" href="http://localhost:3000/mainTodo" style={{color:'blue'}}>Todo App</a><br />
-                        <a target="_blank" href="http://localhost:3000/expense" style={{color:'blue'}}>Expense Tracker App</a>
+                        <a target="_blank" href="https://mernfathima.herokuapp.com/mainTodo" style={{color:'blue'}}>Todo App</a><br />
+                        <a target="_blank" href="https://mernfathima.herokuapp.com/expense" style={{color:'blue'}}>Expense Tracker App</a>
                     </div>
                 </div>
             </section>
